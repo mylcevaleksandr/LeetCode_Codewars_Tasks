@@ -9,13 +9,18 @@ export class AppComponent {
   title = 'LeetCode_Codewars_Tasks';
 
   constructor() {
-    console.log(this.twoSum(this.numsArr, this.target));
+    // console.log(this.CodewarsTwoSum(this.numsArr, this.target));
+
+    console.log(this.LeetCodeArgsLength(...this.arguments));
+    console.log(this.LeetCodeArgsLength(1, 2, 3))
+
   }
 
+  private arguments = [null, {anyKey: 'Any value'}, 9, 'HelloWorld!'];
   private numsArr = [2, 5, 7, 9, 13];
   private target = 9;
 
-  private twoSum(nums: number[], target: number): number[] | null {
+  private CodewarsTwoSum(nums: number[], target: number): number[] | null {
     const numMap = new Map();
     for (let i = 0; i < nums.length; i++) {
       const complement: number = target - nums[i];
@@ -27,5 +32,17 @@ export class AppComponent {
     }
 
     return null;
+  }
+
+  private LeetCodeArgsLength(...args: any[]): number {
+    let argsLength = 0;
+
+    if (args && args.length > 0) {
+      argsLength = args.length;
+      return argsLength;
+    } else {
+      return argsLength;
+    }
+
   }
 }
