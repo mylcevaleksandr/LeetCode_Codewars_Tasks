@@ -1,5 +1,6 @@
 @import "variables";
 @import "responsive";
+
 :root {
 
 }
@@ -18,7 +19,7 @@ li {
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: $background-color;
 }
 
 .container {
