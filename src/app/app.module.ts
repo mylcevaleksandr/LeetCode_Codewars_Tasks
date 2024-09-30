@@ -6,23 +6,32 @@ import {AppComponent} from './app.component';
 import {HeaderComponent} from './layout/header/header.component';
 import {FooterComponent} from './layout/footer/footer.component';
 import {LayoutComponent} from "./layout/layout.component";
-import {HomeComponent} from './views/home/home.component';
 import {SharedModule} from "./shared/shared.module";
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatTabsModule} from "@angular/material/tabs";
+import {APP_BASE_HREF} from "@angular/common";
+import {ViewsModule} from "./views/views.module";
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
     HeaderComponent,
-    FooterComponent,
-    HomeComponent
-  ],
+    FooterComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    SharedModule
+    SharedModule,
+    ViewsModule,
+    BrowserAnimationsModule,
+    MatTabsModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_BASE_HREF,
+      useValue: '/',
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

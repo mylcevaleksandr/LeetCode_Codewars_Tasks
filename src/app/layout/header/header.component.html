@@ -1,1 +1,7 @@
-<p>header works!</p>
+<nav mat-tab-nav-bar [tabPanel]="tabPanel">
+  <ng-container *ngFor="let link of links; let i = index">
+    <a mat-tab-link [routerLink]=link.ip
+       [class.mdc-tab-indicator--active]="activeLink === i">{{link.text}}</a>
+  </ng-container>
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>
