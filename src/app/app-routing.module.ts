@@ -7,16 +7,16 @@ import {CodewarsComponent} from "./views/codewars/codewars.component";
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'LeetCode_Codewars_Tasks',
     component: LayoutComponent,
     children: [
-      { path: 'home', component: HomeComponent },
-      { path: 'leetcode', component: LeetcodeComponent },
-      { path: 'codewars', component: CodewarsComponent },
+      {path: 'home', component: HomeComponent},
+      {path: 'leetcode', component: LeetcodeComponent},
+      {path: 'codewars', component: CodewarsComponent},
     ]
   },
-  { path: '', redirectTo: 'LeetCode_Codewars_Tasks/home', pathMatch: 'full' },
-  { path: '**', redirectTo: 'LeetCode_Codewars_Tasks/home' }
+  {path: '', redirectTo: 'LeetCode_Codewars_Tasks/home', pathMatch: 'full'},
+  {path: '**', redirectTo: 'LeetCode_Codewars_Tasks/home'}
 ];
 
 @NgModule({
