@@ -8,8 +8,7 @@ import {FooterComponent} from './layout/footer/footer.component';
 import {LayoutComponent} from "./layout/layout.component";
 import {SharedModule} from "./shared/shared.module";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatTabsModule} from "@angular/material/tabs";
-import {APP_BASE_HREF} from "@angular/common";
+import {APP_BASE_HREF, NgOptimizedImage} from "@angular/common";
 import {ViewsModule} from "./views/views.module";
 
 @NgModule({
@@ -17,14 +16,15 @@ import {ViewsModule} from "./views/views.module";
     AppComponent,
     LayoutComponent,
     HeaderComponent,
-    FooterComponent],
+    FooterComponent
+  ],
   imports: [
     BrowserModule,
     SharedModule,
     ViewsModule,
     BrowserAnimationsModule,
-    MatTabsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgOptimizedImage
   ],
   providers: [
     {
