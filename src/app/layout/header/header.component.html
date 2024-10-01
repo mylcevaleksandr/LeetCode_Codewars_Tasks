@@ -4,11 +4,11 @@
     <img [ngSrc]="'/assets/images/profileCroppedWebP.webp'" alt="imageLogo" height="150" width="150" priority="true">
   </div>
   <nav>
-   <ul id="nav">
-     <li *ngFor="let link of links; let i = index" >
-       <a [routerLink]=link.ip
-          [class.active]="activeLink === i">{{link.text}}</a>
-     </li>
-   </ul>
+    <ul id="nav">
+      <li *ngFor="let link of links; let i = index">
+        <a [routerLink]=link.ip
+           [class.active]="activeLink === i">{{link.text}}</a>
+      </li>
+    </ul>
   </nav>
 </div>
