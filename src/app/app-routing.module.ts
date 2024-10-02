@@ -15,7 +15,7 @@ const routes: Routes = [
       {path: 'codewars', component: CodewarsComponent},
     ]
   },
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  // {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: '**', redirectTo: '/home'}
 ];
 
