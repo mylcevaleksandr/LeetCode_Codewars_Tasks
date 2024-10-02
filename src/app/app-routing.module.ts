@@ -6,6 +6,7 @@ import {LeetcodeComponent} from "./views/leetcode/leetcode.component";
 import {CodewarsComponent} from "./views/codewars/codewars.component";
 
 const routes: Routes = [
+
   {
     path: '',
     component: LayoutComponent,
@@ -13,10 +14,11 @@ const routes: Routes = [
       {path: 'home', component: HomeComponent},
       {path: 'leetcode', component: LeetcodeComponent},
       {path: 'codewars', component: CodewarsComponent},
+      {path: '', redirectTo: 'home', pathMatch: 'full'},
+      {path: '**', redirectTo: 'home'},
     ]
   },
-  // {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: '**', redirectTo: '/home'}
+
 ];
 
 @NgModule({
