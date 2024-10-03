@@ -8,7 +8,7 @@ import {FooterComponent} from './layout/footer/footer.component';
 import {LayoutComponent} from "./layout/layout.component";
 import {SharedModule} from "./shared/shared.module";
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {APP_BASE_HREF, NgOptimizedImage} from "@angular/common";
+import {HashLocationStrategy, LocationStrategy, NgOptimizedImage} from "@angular/common";
 import {ViewsModule} from "./views/views.module";
 
 @NgModule({
@@ -26,11 +26,7 @@ import {ViewsModule} from "./views/views.module";
     AppRoutingModule,
     NgOptimizedImage
   ],
-  providers: [{
-    provide: APP_BASE_HREF,
-    useValue: '/',
-  },
-  ],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule {
