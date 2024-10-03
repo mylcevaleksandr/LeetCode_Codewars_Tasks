@@ -8,7 +8,10 @@ import {filter} from "rxjs";
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  links = [{text: 'Home', ip: '/home'}, {text: 'Leetcode', ip: '/leetcode'}, {text: 'Codewars', ip: '/codewars'}];
+  links = [{text: 'Home', ip: '/LeetCode_Codewars_Tasks/home'}, {
+    text: 'Leetcode',
+    ip: '/LeetCode_Codewars_Tasks/leetcode'
+  }, {text: 'Codewars', ip: '/LeetCode_Codewars_Tasks/codewars'}];
   activeLink: number;
 
   constructor(private router: Router, private route: ActivatedRoute) {

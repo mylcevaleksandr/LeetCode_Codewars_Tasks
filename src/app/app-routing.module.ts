@@ -11,11 +11,11 @@ const routes: Routes = [
     path: '',
     component: LayoutComponent,
     children: [
-      {path: 'home', component: HomeComponent},
-      {path: 'leetcode', component: LeetcodeComponent},
-      {path: 'codewars', component: CodewarsComponent},
-      {path: '', redirectTo: 'home', pathMatch: 'full'},
-      {path: '**', redirectTo: 'home'},
+      {path: 'LeetCode_Codewars_Tasks/home', component: HomeComponent},
+      {path: 'LeetCode_Codewars_Tasks/leetcode', component: LeetcodeComponent},
+      {path: 'LeetCode_Codewars_Tasks/codewars', component: CodewarsComponent},
+      {path: '', redirectTo: 'LeetCode_Codewars_Tasks/home', pathMatch: 'full'},
+      {path: '**', redirectTo: 'LeetCode_Codewars_Tasks/home'},
     ]
   },
 
