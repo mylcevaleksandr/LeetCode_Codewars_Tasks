@@ -1,1 +1,10 @@
-<p>leetcode works!</p>
+<div class="leetCode">
+  <div class="container">
+    <div class="leetCode_title">
+      LeetCode Tasks
+    </div>
+    <div class="leetCode_cards">
+      <app-card *ngFor="let card of cardObjects" [cardData]="card"></app-card>
+    </div>
+  </div>
+</div>

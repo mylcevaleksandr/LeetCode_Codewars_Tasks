@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeetcodeComponent } from './leetcode.component';
+import { LeetCodeComponent } from './leetCode.component';
 
 describe('LeetcodeComponent', () => {
-  let component: LeetcodeComponent;
-  let fixture: ComponentFixture<LeetcodeComponent>;
+  let component: LeetCodeComponent;
+  let fixture: ComponentFixture<LeetCodeComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LeetcodeComponent]
+      declarations: [LeetCodeComponent]
     });
-    fixture = TestBed.createComponent(LeetcodeComponent);
+    fixture = TestBed.createComponent(LeetCodeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

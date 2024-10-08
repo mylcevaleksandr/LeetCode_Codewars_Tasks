@@ -27,10 +27,6 @@ import {ViewsModule} from "./views/views.module";
     NgOptimizedImage
   ],
   providers: [
-    // {
-    //   provide: APP_BASE_HREF,
-    //   useValue: '/',
-    // },
     {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
