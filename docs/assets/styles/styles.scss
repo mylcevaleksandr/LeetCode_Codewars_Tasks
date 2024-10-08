@@ -12,6 +12,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 li {
@@ -25,4 +26,35 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px 15px;
+  color: $light-blue;
+  background-color: $main-blue;
+  border-radius: 25px;
+  font-family: 'Roboto Medium', 'sans-serif';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  border: 2px solid $light-blue;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+
+
+  &:hover {
+    background-color: $light-blue;
+    cursor: pointer;
+    border-color: $accent-color;
+    color: $font-color;
+  }
+}
+
+.link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  letter-spacing: 2px;
 }
