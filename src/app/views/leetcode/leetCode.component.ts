@@ -14,7 +14,7 @@ export class LeetCodeComponent {
       instructions: '',
       btnInstructions: 'Run',
       functionName: "runCreateHelloWorld",
-      link: 'https://leetcode.com/problems/create-hello-world-function/description/'
+      link: 'https://github.com/mylcevaleksandr/LeetCode_Codewars_Tasks/blob/master/src/app/shared/utils/leetCodeUtils/createHelloWorld.util.ts'
     },
     {
       title: 'Create Hello World Function',
@@ -30,6 +30,7 @@ export class LeetCodeComponent {
       input: true,
       btnInstructions: 'Run',
       functionName: "generatePalindrome",
+      link: "https://github.com/mylcevaleksandr/LeetCode_Codewars_Tasks/blob/master/src/app/shared/utils/leetCodeUtils/shortestPalindrome.util.ts"
     },
     {title: 'Card 1', description: 'Description 1', instructions: 'Instructions 1', btnInstructions: 'Run 1'},
     {title: 'Card 1', description: 'Description 1', instructions: 'Instructions 1', btnInstructions: 'Run 1'},
