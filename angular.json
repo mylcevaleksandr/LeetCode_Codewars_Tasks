@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "LeetCode_Codewars_Tasks:build:production"
+              "buildTarget": "LeetCode_Codewars_Tasks:build:production"
             },
             "development": {
-              "browserTarget": "LeetCode_Codewars_Tasks:build:development"
+              "buildTarget": "LeetCode_Codewars_Tasks:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "LeetCode_Codewars_Tasks:build"
+            "buildTarget": "LeetCode_Codewars_Tasks:build"
           }
         },
         "test": {
