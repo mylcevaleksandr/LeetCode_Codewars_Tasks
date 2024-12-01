@@ -17,11 +17,12 @@ export class LeetCodeComponent {
       link: 'https://github.com/mylcevaleksandr/LeetCode_Codewars_Tasks/blob/master/src/app/shared/utils/leetCodeUtils/createHelloWorld.util.ts'
     },
     {
-      title: 'Create Hello World Function',
-      description: 'Description 1',
-      instructions: 'Instructions 1',
+      title: 'Clear Parentheses',
+      description: 'Given a string:"example(unwanted thing)example".Your task is to remove everything inside the parentheses as well as the parentheses themselves.The example above would return: "exampleexample"',
+      instructions: 'Enter any string and include some characters in (parentheses).',
+      input: true,
       btnInstructions: 'Run',
-      functionName: "runCreateHelloWorld",
+      functionName: "clearParentheses",
     },
     {
       title: "Shortest Palindrome",

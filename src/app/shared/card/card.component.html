@@ -10,8 +10,10 @@
 
   <div class="card_actions">
     <div class="card_actions-input">
-      <input class="input" type="text" [(ngModel)]="userInput" placeholder="Enter a string"
-             *ngIf="cardData.input">
+      @if (cardData.input) {
+        <input class="input" type="text" [(ngModel)]="userInput" placeholder="Enter a string"
+          >
+      }
     </div>
     <button class="btn" (click)="runUtilFunction(cardData.functionName)">
       {{btnInstructions}}

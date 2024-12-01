@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {createHelloWorld} from "../utils/leetCodeUtils/createHelloWorld.util";
 import {shortestPalindrome} from "../utils/leetCodeUtils/shortestPalindrome.util";
+import {clearParentheses} from "../utils/codewarsUtils/clearParentheses.util";
 
 @Component({
   selector: 'app-card',
@@ -29,7 +30,11 @@ export class CardComponent implements OnInit {
     }
     if (functionName === "generatePalindrome") {
       this.result = shortestPalindrome(this.userInput);
-      this.userInput=''
+      this.userInput = '';
+    }
+    if (functionName === "clearParentheses") {
+      this.result = clearParentheses(this.userInput);
+      this.userInput = '';
     }
   }
 

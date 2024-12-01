@@ -4,7 +4,9 @@
       LeetCode Tasks
     </div>
     <div class="leetCode_cards">
-      <app-card *ngFor="let card of cardObjects" [cardData]="card"></app-card>
+      @for (card of cardObjects; track card) {
+        <app-card [cardData]="card"></app-card>
+      }
     </div>
   </div>
 </div>
